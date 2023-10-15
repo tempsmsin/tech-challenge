@@ -1,0 +1,5 @@
+We can use this below command to get the metadata of of an instance within AWS or Azure or GCP
+and provide a json formatted output.
+
+
+az vm show --resource-group <resource-group-name> --name <vm-name> --query '{Name:name, ResourceGroup:resourceGroup, Location:location, Tags:tags}' --output json
